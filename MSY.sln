@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSY", "MSY\MSY.csproj", "{C2585FDF-0B51-4DF2-8FC8-7DD3A5684FC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSY.Database", "MSY.Database\MSY.Database.csproj", "{C99E7F8D-D73F-463E-BDD6-E973794F70C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSY.Infrastructure", "MSY.Infrastructure\MSY.Infrastructure.csproj", "{701EBB65-233A-4CD9-A998-9EC1A07550CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2585FDF-0B51-4DF2-8FC8-7DD3A5684FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2585FDF-0B51-4DF2-8FC8-7DD3A5684FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2585FDF-0B51-4DF2-8FC8-7DD3A5684FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2585FDF-0B51-4DF2-8FC8-7DD3A5684FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99E7F8D-D73F-463E-BDD6-E973794F70C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99E7F8D-D73F-463E-BDD6-E973794F70C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99E7F8D-D73F-463E-BDD6-E973794F70C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99E7F8D-D73F-463E-BDD6-E973794F70C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{701EBB65-233A-4CD9-A998-9EC1A07550CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{701EBB65-233A-4CD9-A998-9EC1A07550CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{701EBB65-233A-4CD9-A998-9EC1A07550CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{701EBB65-233A-4CD9-A998-9EC1A07550CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
