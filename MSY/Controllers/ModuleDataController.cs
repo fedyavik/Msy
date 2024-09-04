@@ -13,9 +13,9 @@ public class ModuleDataController(IMediator mediator) : ControllerBase
     /// Получение статуса объекта
     /// </summary>
     /// <returns></returns>
-    [HttpGet]
+    [HttpPost]
     public async Task<GetObjectStatusCommandResponse> Get(
-        [FromQuery] GetObjectStatusCommand command,
+        [FromBody] GetObjectStatusCommand command,
         CancellationToken token)
     {
         var result = await mediator.Send(command, token);
@@ -25,9 +25,9 @@ public class ModuleDataController(IMediator mediator) : ControllerBase
     /// Получение данных последнего пакета с объекта
     /// </summary>
     /// <returns></returns>
-    [HttpGet("LastPayload")]
+    [HttpPost("LastPayload")]
     public async Task<ModuleData> GetPayload(
-        [FromQuery] GetLastPayloadCommand command,
+        [FromBody] GetLastPayloadCommand command,
         CancellationToken token)
     {
         var result = await mediator.Send(command, token);

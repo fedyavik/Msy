@@ -8,10 +8,19 @@
 		{
 			"name": "Get object status working",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"objectId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/ModuleData?ObjectId=1",
+					"raw": "http://localhost:8080/ModuleData",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -19,12 +28,6 @@
 					"port": "8080",
 					"path": [
 						"ModuleData"
-					],
-					"query": [
-						{
-							"key": "ObjectId",
-							"value": "1"
-						}
 					]
 				}
 			},
@@ -33,10 +36,19 @@
 		{
 			"name": "Get object status not working",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"objectId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/ModuleData?ObjectId=2",
+					"raw": "http://localhost:8080/ModuleData",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -44,12 +56,6 @@
 					"port": "8080",
 					"path": [
 						"ModuleData"
-					],
-					"query": [
-						{
-							"key": "ObjectId",
-							"value": "2"
-						}
 					]
 				}
 			},
@@ -58,10 +64,19 @@
 		{
 			"name": "Get last object  data",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"objectId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/ModuleData/LastPayload?ObjectId=1",
+					"raw": "http://localhost:8080/ModuleData/LastPayload",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -72,10 +87,6 @@
 						"LastPayload"
 					],
 					"query": [
-						{
-							"key": "ObjectId",
-							"value": "1"
-						},
 						{
 							"key": "",
 							"value": null,
@@ -89,10 +100,19 @@
 		{
 			"name": "Get last object  data (Bad request)",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"objectId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/ModuleData/LastPayload?ObjectId=3",
+					"raw": "http://localhost:8080/ModuleData/LastPayload",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -101,12 +121,6 @@
 					"path": [
 						"ModuleData",
 						"LastPayload"
-					],
-					"query": [
-						{
-							"key": "ObjectId",
-							"value": "3"
-						}
 					]
 				}
 			},
